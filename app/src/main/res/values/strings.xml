@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">task</string>
+    <string name="name">Name</string>
+    <string name="gender">Gender</string>
+    <string name="from">From</string>
+    <string name="username">Username</string>
+    <string name="email">Email</string>
+</resources>

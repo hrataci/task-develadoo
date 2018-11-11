@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        tools:context="com.develandoo.task.ui.main.fragments.UserDetailedFragment">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/imgUser"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/name"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            <com.develandoo.task.widgets.ExpandableTextView
+                android:id="@+id/lblNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="8"
+                android:text="@string/name"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            <com.develandoo.task.widgets.ExpandableTextView
+                android:id="@+id/lblGenderValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="8"
+                android:text="@string/gender"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/from"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+            <com.develandoo.task.widgets.ExpandableTextView
+                android:id="@+id/lblAddressValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="8"
+                android:text="@string/from"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/username"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.develandoo.task.widgets.ExpandableTextView
+                android:id="@+id/lblUserNameValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="8"
+                android:text="@string/username"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <com.develandoo.task.widgets.ExpandableTextView
+                android:id="@+id/lblEmailValue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="8"
+                android:text="@string/email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
