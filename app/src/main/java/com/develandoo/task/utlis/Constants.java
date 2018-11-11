@@ -11,7 +11,6 @@ public interface Constants {
 
 
     interface JsonData {
-        int PAGE_SIZE = 10;
         String RESULTS = "results";
     }
 
