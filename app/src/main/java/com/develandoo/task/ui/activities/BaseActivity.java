@@ -2,6 +2,7 @@ package com.develandoo.task.ui.activities;
 
 import android.app.Dialog;
 import android.content.DialogInterface;
+import android.content.pm.ActivityInfo;
 import android.content.res.ColorStateList;
 import android.os.Build;
 import android.os.Bundle;
@@ -28,6 +29,9 @@ public abstract class BaseActivity extends AppCompatActivity implements RequestL
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        if(getResources().getBoolean(R.bool.landscape_only)){
+            setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        }
         RequestConnector.getInstance().registerListener(this);
         mFragmentManager = getSupportFragmentManager();
     }
